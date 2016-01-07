@@ -58,7 +58,7 @@ section[class*="grid"] {
 /* header, footer */
 .header,
 .footer {
-  padding: 20px 0 13px;
+  padding: 18px 0 15px;
   background-color: #2c2c2c;
   color: #ffffff;
   font-size: 0;
@@ -66,6 +66,7 @@ section[class*="grid"] {
 
 .logo {
   font-size: 22px;
+  line-height: 34px;
   font-weight: 400;
 }
 
@@ -395,7 +396,7 @@ section[class*="grid"] {
 
 /* info */
 .info {
-  padding: 71px 0;
+  padding: 71px 0 75px;
 }
 
 .pay .title {
@@ -403,7 +404,7 @@ section[class*="grid"] {
 }
 
 .title-3 {
-  margin-top: 0px;
+  margin-top: 42px;
   font-size: 26px;
   font-weight: 500;
   color: #444444;
@@ -418,12 +419,185 @@ section[class*="grid"] {
 
 .answers {
   padding-left: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   font-size: 16px;
   line-height: 22px;
+  color: #444444;
 }
 
+/* achievements */
+.achievements {
+  height: 292px;
+  background-color: #78888e;
+  padding: 72px 0 10px;
+  text-align: center;
+}
 
+.achievement__item {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.achievement__item .number{
+  display: block;
+  margin: 0 auto 18px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 150px;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* team */
+.team {
+  padding: 91px 0 104px;
+  text-align: center;
+}
+
+.team .title:after {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.team .title {
+  margin-bottom: 88px;
+}
+
+.team__item {
+  margin: 0 auto;
+}
+
+.team__image {
+  margin: 0 auto 31px;
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #474747;
+  cursor: pointer;
+}
+
+.team__name {
+  margin-bottom: 7px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.team__profession {
+  margin: 0;
+  font-size: 18px;
+  color: #444444;
+}
+
+/* feedback */
+.feedback {
+  margin-bottom: 71px;
+  text-align: center;
+}
+
+.feedback .title {
+  margin-bottom: 79px;
+}
+
+.feedback .title:after {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.feedback__item {
+  margin: 0 auto;
+}
+
+.feedback__image {
+  margin: 0 auto 24px;
+  height: 98px;
+  width: 98px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #474747;
+}
+
+.feedback__name {
+  margin-bottom: 17px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.feedback__message {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #353535;
+}
+
+/* contacts */
+.contacts {
+  height: 310px;
+  padding: 138px 0 0;
+  background-color: #c3def3;
+}
+
+.contacts .title-3 {
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.contacts__text {
+  margin: 0 0 58px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #616161;
+  text-align: center;
+}
+
+.contacts__phone {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+  color: #292929;
+}
+
+.contacts__info {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #525252;
+}
+
+.title-4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.contacts .title-4,
+.contacts__phone,
+.contacts__info {
+  padding-left: 55px;
+  margin-bottom: 9px;
+}
+
+.mail {
+  display: block;
+  margin-bottom: 33px;
+  padding-left: 45px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444444;
+}
 /* footer */
 
 /* слайдер fancybox */
