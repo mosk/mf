@@ -117,9 +117,6 @@ section[class*="grid"] {
   border: 1px solid #ffffff;
 }
 
-.promo__button:after {
-}
-
 /* features */
 .features {
   padding: 77px 0 20px;
@@ -159,7 +156,8 @@ section[class*="grid"] {
 }
 
 /* нижний бордер у блоков  */
-.about:after {
+.about:after,
+.order:after {
   content: "";
   display: block;
   position: absolute;
@@ -246,6 +244,7 @@ section[class*="grid"] {
 .plan {
   text-align: center;
   height: 662px;
+  background-color: #769c61;
   background-image: url(../img/plan-bg.jpg);
   background-position: center;
   -webkit-background-size: cover;
@@ -263,6 +262,7 @@ section[class*="grid"] {
   height: 400px;
 }
 
+/* пункты плана полёта */
 .ballon {
   position: absolute;
   width: 100px;
@@ -271,6 +271,7 @@ section[class*="grid"] {
 .ballon__title {
   font-size: 18px;
   font-weight: 500;
+  color: #454545;
 }
 
 .ballon__image {
@@ -332,8 +333,75 @@ section[class*="grid"] {
   font-size: 22px;
 }
 
+/* order */
+.order {
+  padding: 85px 0;
+  position: relative;
+}
+
+.order .title {
+  margin-bottom: 62px;
+}
+
+.order__block {
+  padding-top: 7px;
+}
+
+.order__info {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #444444;
+  line-height: 40px;
+}
+
+.order__input {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 350px;
+  height: 38px;
+  border: 1px solid  #d5d5d5;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 5px;
+}
+
+.name,
+.phone {
+  width: 303px;
+  padding-left: 40px;
+}
+
+.order__price {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444444;
+  line-height: 38px;
+}
+
+.order__price--red {
+  font-size: 38px;
+  color: #f97e7e;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.order__button {
+  margin-top: 20px;
+  height: 40px;
+  width: 165px;
+  font-size: 18px;
+  background-color: #46b0dc;
+  color: #ffffff;
+  border: 0 solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
 
 /* footer */
-
 
 /* слайдер fancybox */

@@ -136,6 +136,8 @@
         </div>
       </div>
     </div>
+
+    <!-- timer -->
     <div class="timer">
       <div class="container">
         <div class="row">
@@ -151,22 +153,51 @@
         </div>
       </div>
     </div>
+
+    <!-- order -->
     <div class="order" id="order">
       <div class="container">
         <div class="row">
-          <div class="grid-6">
+          <div class="grid-5">
             <h2 class="title">Расчитать стоимость</h2>
-            <p class="description">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
-            <p class="description">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
-            <p class="description">Выбирайте, куда мы полетим сегодня!</p>
+            <p class="text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+            <p class="text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
+            <p class="text">Выбирайте, куда мы полетим сегодня!</p>
           </div>
+          <div class="grid-1">хрень какая-то</div>
           <div class="grid-6">
-            <label for="route"><input class="route" id="route" type="text"></label> <label for="number"><input class="number" id="number" type="text"></label> <label for="name"><input class="text" id="name" type="text"></label> <label for="phone"><input class="phone" id="phone" type="text"></label>
-            <p>Стоимость<span>9000 Р</span></p><button>Полетели!</button>
+            <div class="order__block">
+              <label class="order__info" for="route">Маршрут полёта:
+                <select class="order__input route" id="route" size="1">
+                  <option value="a" selected>Сестрорецк - Парнас</option>
+                  <option value="b">Парнас - Сестрорецк</option>
+                </select>
+              </label>
+              <label class="order__info" for="number">Количество человек:
+                <select class="order__input number" id="number" size="1">
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </label>
+              <label class="order__info" for="name">Имя и фамилия:<input class="order__input name" id="name" type="text"></label>
+              <label class="order__info" for="phone">Телефон:<input class="order__input phone" id="phone" type="text"></label>
+              <p class="order__price">Стоимость:<span class="order__price--red"> 9000 Р</span></p>
+              <button class="order__button pull-right">Полетели!</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+
     <div class="faq">
       <div class="container">
         <div class="row">
