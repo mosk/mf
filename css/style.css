@@ -152,7 +152,7 @@ section[class*="grid"] {
 /* about */
 .about {
   position: relative;
-  padding: 53px 0 112px;
+  padding: 53px 0 100px;
 }
 
 /* нижний бордер у блоков  */
@@ -171,7 +171,7 @@ section[class*="grid"] {
 
 /* title */
 .title {
-  margin: 0;
+  margin: 0 0 62px;
   position: relative;
   font-size: 32px;
   font-weight: 500;
@@ -187,15 +187,12 @@ section[class*="grid"] {
   width: 60px;
 }
 
-.about .title {
-  margin-bottom: 62px;
-}
-
 /* text */
 .text {
   font-size: 18px;
   line-height: 24px;
   color: #444444;
+  padding-bottom: 6px;
 }
 
 /* video */
@@ -224,7 +221,7 @@ section[class*="grid"] {
 .slider {
   text-align: center;
   font-size: 0;
-  padding: 86px 0 20px;
+  padding: 24px 0 20px;
 }
 
 .fancybox {
@@ -259,7 +256,7 @@ section[class*="grid"] {
 
 .plan__process {
   position: relative;
-  height: 400px;
+  height: 338px;
 }
 
 /* пункты плана полёта */
@@ -291,7 +288,7 @@ section[class*="grid"] {
 
 .ballon--3 {
   left: 50%;
-  top: 83px;
+  bottom: 271px;
   transform: translate(-50%);
 }
 
@@ -335,12 +332,8 @@ section[class*="grid"] {
 
 /* order */
 .order {
-  padding: 85px 0;
+  padding: 85px 0 52px;
   position: relative;
-}
-
-.order .title {
-  margin-bottom: 62px;
 }
 
 .order__block {
@@ -361,9 +354,8 @@ section[class*="grid"] {
   float: right;
   width: 350px;
   height: 38px;
-  border: 1px solid  #d5d5d5;
+  border: 1px solid #d5d5d5;
   border-radius: 5px;
-  outline: none;
   padding: 0 5px;
 }
 
@@ -399,6 +391,36 @@ section[class*="grid"] {
   border: 0 solid transparent;
   border-radius: 5px;
   outline: none;
+}
+
+/* info */
+.info {
+  padding: 71px 0;
+}
+
+.pay .title {
+  margin-bottom: 51px;
+}
+
+.title-3 {
+  margin-top: 0px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.question {
+  padding-left: 46px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.answers {
+  padding-left: 28px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 
