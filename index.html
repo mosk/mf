@@ -26,7 +26,7 @@
         </div>
         <div class="grid-9">
           <nav class="menu pull-right">
-            <a class="menu__item" href="#about">Кто мы</a>
+            <a class="menu__item menu__item--active" href="#about">Кто мы</a>
             <a class="menu__item" href="#gallery">Фотографии</a>
             <a class="menu__item" href="#plan">План полёта</a>
             <a class="menu__item" href="#order">Заказать</a>
@@ -37,17 +37,15 @@
       </div>
     </div>
   </header>
+
+  <!-- main -->
   <main class="main">
 
     <!-- promo -->
     <div class="promo">
       <div class="container">
-        <div class="row">
-          <div class="grid-12">
-            <h1 class="promo__title">Организация полетов на воздушных шарах</h1>
-            <a class="promo__button" href="#about">Подробнее</a>
-          </div>
-        </div>
+        <h1 class="promo__title">Организация полетов на воздушных шарах</h1>
+        <button class="button button--more" href="#about">Подробнее</button>
       </div>
     </div>
 
@@ -82,7 +80,7 @@
           </div>
           <div class="grid-8">
             <div class="video">
-              <iframe width="100%" height="345" src="https://www.youtube.com/embed/TtREygMva74" frameborder="0" allowfullscreen></iframe>
+              <iframe width="100%" height="345" src="https://www.youtube.com/embed/ebYt-jlCeL4" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -107,31 +105,27 @@
     <!-- plan -->
     <div class="plan" id="plan">
       <div class="container">
-        <div class="row">
-          <div class="grid-12">
-            <h2 class="title">Как проходят полёты</h2>
-            <div class="plan__process">
-              <div class="ballon ballon--1">
-                <div class="ballon__title">Взлёт</div>
-                <div class="ballon__image">1</div>
-              </div>
-              <div class="ballon ballon--2">
-                <div class="ballon__title">Набираем высоту</div>
-                <div class="ballon__image">2</div>
-              </div>
-              <div class="ballon ballon--3">
-                <div class="ballon__title">Летаем</div>
-                <div class="ballon__image">3</div>
-              </div>
-              <div class="ballon ballon--4">
-                <div class="ballon__title">Снижаемся</div>
-                <div class="ballon__image">4</div>
-              </div>
-              <div class="ballon ballon--5">
-                <div class="ballon__title">Садимся</div>
-                <div class="ballon__image">5</div>
-              </div>
-            </div>
+        <h2 class="title">Как проходят полёты</h2>
+        <div class="plan__process">
+          <div class="ballon ballon--1">
+            <div class="ballon__title">Взлёт</div>
+            <div class="ballon__image">1</div>
+          </div>
+          <div class="ballon ballon--2">
+            <div class="ballon__title">Набираем высоту</div>
+            <div class="ballon__image">2</div>
+          </div>
+          <div class="ballon ballon--3">
+            <div class="ballon__title">Летаем</div>
+            <div class="ballon__image">3</div>
+          </div>
+          <div class="ballon ballon--4">
+            <div class="ballon__title">Снижаемся</div>
+            <div class="ballon__image">4</div>
+          </div>
+          <div class="ballon ballon--5">
+            <div class="ballon__title">Садимся</div>
+            <div class="ballon__image">5</div>
           </div>
         </div>
       </div>
@@ -158,13 +152,14 @@
     <div class="order" id="order">
       <div class="container">
         <div class="row">
-          <div class="grid-5">
-            <h2 class="title">Расчитать стоимость</h2>
-            <p class="text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
-            <p class="text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
-            <p class="text">Выбирайте, куда мы полетим сегодня!</p>
+          <div class="grid-6">
+            <div class="order__description">
+              <h2 class="title">Расчитать стоимость</h2>
+              <p class="text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+              <p class="text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
+              <p class="text">Выбирайте, куда мы полетим сегодня!</p>
+            </div>
           </div>
-          <div class="grid-1">хрень какая-то</div>
           <div class="grid-6">
             <div class="order__block">
               <label class="order__info" for="route">Маршрут полёта:
@@ -248,24 +243,18 @@
     <div class="achievements">
       <div class="container">
         <div class="row">
-          <div class="grid-1">1</div>
-          <div class="grid-10">
-            <div class="row">
-              <div class="grid-3">
-                  <p class="achievement__item"><span class="number">700</span>Полетов в год</p>
-              </div>
-              <div class="grid-3">
-                  <p class="achievement__item"><span class="number">3000</span>Средняя дальность в метрах</p>
-              </div>
-              <div class="grid-3">
-                  <p class="achievement__item"><span class="number">3</span>Воздушных шара</p>
-              </div>
-              <div class="grid-3">
-                  <p class="achievement__item"><span class="number">12</span>Человек в команде</p>
-              </div>
-            </div>
+          <div class="grid-3">
+              <p class="achievement__item"><span class="number">700</span>Полетов в год</p>
           </div>
-          <div class="grid-1">1</div>
+          <div class="grid-3">
+              <p class="achievement__item"><span class="number">3000</span>Средняя дальность в метрах</p>
+          </div>
+          <div class="grid-3">
+              <p class="achievement__item"><span class="number">3</span>Воздушных шара</p>
+          </div>
+          <div class="grid-3">
+              <p class="achievement__item"><span class="number">12</span>Человек в команде</p>
+          </div>
         </div>
       </div>
     </div>
@@ -291,7 +280,7 @@
           <div class="grid-3">
             <figure class="team__item">
               <div class="team__image">
-                <img alt="" height="160" src="img/person-1.jpg" width="160">
+                <img alt="" height="160" src="img/person-2.jpg" width="160">
               </div>
               <figcaption class="team__name">
                 Надежда Надеждова
@@ -302,7 +291,7 @@
           <div class="grid-3">
             <figure class="team__item">
               <div class="team__image">
-                <img alt="" height="160" src="img/person-1.jpg" width="160">
+                <img alt="" height="160" src="img/person-3.jpg" width="160">
               </div>
               <figcaption class="team__name">
                 Ирина Иринова
@@ -313,7 +302,7 @@
           <div class="grid-3">
             <figure class="team__item">
               <div class="team__image">
-                <img alt="" height="160" src="img/person-1.jpg" width="160">
+                <img alt="" height="160" src="img/person-4.jpg" width="160">
               </div>
               <figcaption class="team__name">
                 Алена Аленова
@@ -348,7 +337,7 @@
           <div class="grid-6">
             <figure class="feedback__item">
               <div class="feedback__image">
-                <img alt="фото" src="img/person-5.jpg" width="98" height="98">
+                <img alt="фото" src="img/person-6.jpg" width="98" height="98">
               </div>
               <figcaption class="feedback__name">
                 Артём Рыбкин
@@ -367,18 +356,18 @@
       <div class="container">
         <div class="row">
           <div class="grid-12">
-            <p class="title-3">Запишите адрес аэропорта</p>
+            <p class="title-3 plane">Запишите адрес аэропорта</p>
             <p class="contacts__text">Всеволожск, улица Аэродромная 19а</p>
           </div>
           <div class="grid-4">
-            <p class="title-4">Наш офис в Питере</p>
+            <p class="title-4 marker">Наш офис в Питере</p>
             <p class="contacts__info">Литейный 14б
               <br>12:00 - 19:00
             </p>
             <p class="contacts__phone">746-67-33</p>
           </div>
           <div class="grid-4">
-            <p class="title-4">Наш офис во Всеволожске</p>
+            <p class="title-4 marker">Наш офис во Всеволожске</p>
             <p class="contacts__info">Аэродромная 19А
               <br>12:00 - 19:00
             </p>
@@ -386,14 +375,16 @@
           </div>
           <div class="grid-4">
             <a class="mail" href="#">mnebyvnebo@gmail.com</a>
-            <a class="icon vkontakte"href="">vk</a>
-            <a class="icon facebook" href="">fb</a>
-            <a class="icon instagram" href="">i</a>
+            <a class="icon vkontakte"href="">&#230</a>
+            <a class="icon facebook" href="">&#228</a>
+            <a class="icon instagram" href="">&#235</a>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
