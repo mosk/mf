@@ -93,10 +93,10 @@
         <h2 class="title">Галерея</h2>
         <div class="slider">
           <button class="slider__button slider__button--left">left</button>
-          <a class="fancybox" href="img/photo-1.jpg" rel="group"><img src="img/photo-1s.jpg" alt="воздушный шар"></a>
-          <a class="fancybox" href="img/photo-2.jpg" rel="group"><img src="img/photo-2s.jpg" alt="воздушный шар"></a>
-          <a class="fancybox" href="img/photo-3.jpg" rel="group"><img src="img/photo-3s.jpg" alt="воздушный шар"></a>
-          <a class="fancybox" href="img/photo-4.jpg" rel="group"><img src="img/photo-4s.jpg" alt="воздушный шар"></a>
+          <a class="slider__image--small fancybox" href="img/photo-1.jpg" rel="group"><img src="img/photo-1s.jpg" alt="воздушный шар"></a>
+          <a class="slider__image--small fancybox" href="img/photo-2.jpg" rel="group"><img src="img/photo-2s.jpg" alt="воздушный шар"></a>
+          <a class="slider__image--small fancybox" href="img/photo-3.jpg" rel="group"><img src="img/photo-3s.jpg" alt="воздушный шар"></a>
+          <a class="slider__image--small fancybox" href="img/photo-4.jpg" rel="group"><img src="img/photo-4s.jpg" alt="воздушный шар"></a>
           <button class="slider__button slider__button--right">right</button>
         </div>
       </div>
@@ -162,14 +162,14 @@
           </div>
           <div class="grid-6">
             <div class="order__block">
-              <label class="order__info" for="route">Маршрут полёта:
-                <select class="order__input route" id="route" size="1">
+              <label class="order__info" for="order__input--route">Маршрут полёта:
+                <select class="order__input order__input--route" id="order__input--route" size="1">
                   <option value="a" selected>Сестрорецк - Парнас</option>
                   <option value="b">Парнас - Сестрорецк</option>
                 </select>
               </label>
-              <label class="order__info" for="number">Количество человек:
-                <select class="order__input number" id="number" size="1">
+              <label class="order__info" for="order__input--number">Количество человек:
+                <select class="order__input order__input--number" id="order__input--number" size="1">
                   <option value="1">1</option>
                   <option value="2" selected>2</option>
                   <option value="3">3</option>
@@ -182,8 +182,8 @@
                   <option value="10">10</option>
                 </select>
               </label>
-              <label class="order__info" for="name">Имя и фамилия:<input class="order__input name" id="name" type="text"></label>
-              <label class="order__info" for="phone">Телефон:<input class="order__input phone" id="phone" type="text"></label>
+              <label class="order__info" for="order__input--name">Имя и фамилия:<input class="order__input order__input--name" id="order__input--name" type="text"></label>
+              <label class="order__info" for="order__input--phone">Телефон:<input class="order__input order__input--phone" id="order__input--phone" type="text"></label>
               <p class="order__price">Стоимость:<span class="order__price--red"> 9000 Р</span></p>
               <button class="order__button pull-right">Полетели!</button>
             </div>
@@ -374,14 +374,18 @@
             <p class="contacts__phone">746-67-33</p>
           </div>
           <div class="grid-4">
-            <a class="mail" href="#">mnebyvnebo@gmail.com</a>
-            <a class="icon vkontakte"href="">&#230</a>
-            <a class="icon facebook" href="">&#228</a>
-            <a class="icon instagram" href="">&#235</a>
+            <a class="mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
+            <a class="icon vkontakte" href="https://vk.com/">&#230</a>
+            <a class="icon facebook" href="https://www.facebook.com/">&#228</a>
+            <a class="icon instagram" href="https://www.instagram.com/">&#235</a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- кнопка скролла -->
+    <button class="button__scroll" id="button__scroll">
+    </button>
   </main>
 
   <!-- footer -->
