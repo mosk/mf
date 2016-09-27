@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Монгольфьеркин и КО</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- стили слайдера fancybox -->
-  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
-
-  <!-- подключаем шрифт -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <script src="js/live.js"></script>
+  <link rel="stylesheet" href="css/normalize.css" >
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' type='text/css'>
+  <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
 </head>
 <body>
 
@@ -139,10 +137,7 @@
             <p class="timer__title">До ближайшего полета:</p>
           </div>
           <div class="grid-7">
-            <p class="timer__number timer__number--day">2 <span class="timer__number--text">дня</span></p>
-            <p class="timer__number timer__number--hour">16 <span class="timer__number--text">часов</span></p>
-            <p class="timer__number timer__number--minute">8 <span class="timer__number--text">минут</span></p>
-            <p class="timer__number timer__number--second">14 <span class="timer__number--text">секунд</span></p>
+            <div id="defaultCountdown"></div>
           </div>
         </div>
       </div>
@@ -412,13 +407,34 @@
   </footer>
 
   <!-- подключаем jquery -->
-  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
 
-  <!-- подключаем скролл -->
+  <!-- подключаем плавный скролл -->
   <script src="js/scroll.js"></script>
 
-  <!-- подключаем слайдер -->
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/script.js.js"></script>
+  <!-- подключаем галерею -->
+  <script>
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+
+  <!-- плагин для прокрутки слайдов мышью -->
+  <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- подключаем таймер -->
+  <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
+  <script>
+    $(function () {
+      $('#defaultCountdown').countdown({until: new Date(2016, 11 - 1, 21)});
+    });
+  </script>
+
 </body>
 </html>
