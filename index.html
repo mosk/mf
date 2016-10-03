@@ -2,19 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
   <title>Монгольфьеркин и КО</title>
   <link rel="stylesheet" href="css/normalize.css" >
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' type='text/css'>
-  <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/countdown.css">
 </head>
 <body>
 
   <!-- header -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="row">
         <div class="grid-3">
@@ -24,12 +24,12 @@
         </div>
         <div class="grid-9">
           <nav class="menu pull-right">
-            <a class="menu__item menu__item--active" href="#about">Кто мы</a>
-            <a class="menu__item" href="#gallery">Фотографии</a>
-            <a class="menu__item" href="#plan">План полёта</a>
-            <a class="menu__item" href="#order">Заказать</a>
-            <a class="menu__item" href="#team">Команда</a>
-            <a class="menu__item" href="#contacts">Контакты</a>
+            <a class="menu__item scroll" href="#about">Кто мы</a>
+            <a class="menu__item scroll" href="#gallery">Фотографии</a>
+            <a class="menu__item scroll" href="#plan">План полёта</a>
+            <a class="menu__item scroll" href="#order">Заказать</a>
+            <a class="menu__item scroll" href="#team">Команда</a>
+            <a class="menu__item scroll" href="#contacts">Контакты</a>
           </nav>
         </div>
       </div>
@@ -43,7 +43,7 @@
     <div class="promo">
       <div class="container">
         <h1 class="promo__title">Организация полетов на воздушных шарах</h1>
-        <button class="button button--more" href="#about">Подробнее</button>
+        <a class="button button--more scroll" href="#about">Подробнее</a>
       </div>
     </div>
 
@@ -78,7 +78,7 @@
           </div>
           <div class="grid-8">
             <div class="video">
-              <iframe width="100%" height="345" src="https://www.youtube.com/embed/ebYt-jlCeL4" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/ebYt-jlCeL4" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -90,12 +90,23 @@
       <div class="container">
         <h2 class="title">Галерея</h2>
         <div class="slider">
-          <button class="slider__button slider__button--left">left</button>
-          <a class="slider__image--small fancybox" href="img/photo-1.jpg" rel="group"><img src="img/photo-1s.jpg" alt="воздушный шар"></a>
-          <a class="slider__image--small fancybox" href="img/photo-2.jpg" rel="group"><img src="img/photo-2s.jpg" alt="воздушный шар"></a>
-          <a class="slider__image--small fancybox" href="img/photo-3.jpg" rel="group"><img src="img/photo-3s.jpg" alt="воздушный шар"></a>
-          <a class="slider__image--small fancybox" href="img/photo-4.jpg" rel="group"><img src="img/photo-4s.jpg" alt="воздушный шар"></a>
-          <button class="slider__button slider__button--right">right</button>
+
+          <div id="owl-demo" class="owl-carousel">
+            <a class="slider__image fancybox" href="img/photo-1.jpg" rel="group"><img src="img/photo-1s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-2.jpg" rel="group"><img src="img/photo-2s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-3.jpg" rel="group"><img src="img/photo-3s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-4.jpg" rel="group"><img src="img/photo-4s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-1.jpg" rel="group"><img src="img/photo-1s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-2.jpg" rel="group"><img src="img/photo-2s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-3.jpg" rel="group"><img src="img/photo-3s.jpg" alt="воздушный шар"></a>
+            <a class="slider__image fancybox" href="img/photo-4.jpg" rel="group"><img src="img/photo-4s.jpg" alt="воздушный шар"></a>
+          </div>
+
+          <div class="customNavigation">
+            <button class="btn prev">Previous</button>
+            <button class="btn next">Next</button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -262,48 +273,48 @@
             <h2 class="title">Команда инструкторов</h2>
           </div>
           <div class="grid-3">
-            <figure class="team__item">
+            <div class="team__item">
               <div class="team__image team__image--pilot">
                 <img alt="фото" height="160" width="160" src="img/person-1.jpg">
               </div>
-              <figcaption class="team__name">
+              <p class="team__name">
                 Мария Мариева
-              </figcaption>
-              <p class="team__profession">Старший пилот</p>
-            </figure>
+              </p>
+              <span class="team__profession">Старший пилот</span>
+            </div>
           </div>
           <div class="grid-3">
-            <figure class="team__item">
+            <div class="team__item">
               <div class="team__image team__image--pilot">
                 <img alt="фото" height="160" width="160" src="img/person-2.jpg">
               </div>
-              <figcaption class="team__name">
+              <p class="team__name">
                 Надежда Надеждова
-              </figcaption>
-              <p class="team__profession">Второй пилот</p>
-            </figure>
+              </p>
+              <span class="team__profession">Второй пилот</span>
+            </div>
           </div>
           <div class="grid-3">
-            <figure class="team__item">
+            <div class="team__item">
               <div class="team__image team__image--radio">
                 <img alt="фото" height="160" width="160" src="img/person-3.jpg">
               </div>
-              <figcaption class="team__name">
+              <p class="team__name">
                 Ирина Иринова
-              </figcaption>
-              <p class="team__profession">Авиадиспетчер</p>
-            </figure>
+              </p>
+              <span class="team__profession">Авиадиспетчер</span>
+            </div>
           </div>
           <div class="grid-3">
-            <figure class="team__item">
+            <div class="team__item">
               <div class="team__image team__image--tech">
                 <img alt="фото" height="160" width="160" src="img/person-4.jpg">
               </div>
-              <figcaption class="team__name">
+              <p class="team__name">
                 Алена Аленова
-              </figcaption>
-              <p class="team__profession">Авиатехник</p>
-            </figure>
+              </p>
+              <span class="team__profession">Авиатехник</span>
+            </div>
           </div>
         </div>
       </div>
@@ -317,30 +328,30 @@
             <h2 class="title">Отзывы</h2>
           </div>
           <div class="grid-6">
-            <figure class="feedback__item">
+            <div class="feedback__item">
               <div class="feedback__image">
                 <img alt="фото" src="img/person-5.jpg" width="98" height="98">
               </div>
-              <figcaption class="feedback__name">
+              <p class="feedback__name">
                 Ольга Алексеева
-              </figcaption>
+              </p>
               <blockquote class="feedback__message">
                 Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.
               </blockquote>
-            </figure>
+            </div>
           </div>
           <div class="grid-6">
-            <figure class="feedback__item">
+            <div class="feedback__item">
               <div class="feedback__image">
                 <img alt="фото" src="img/person-6.jpg" width="98" height="98">
               </div>
-              <figcaption class="feedback__name">
+              <p class="feedback__name">
                 Артём Рыбкин
-              </figcaption>
+              </p>
               <blockquote class="feedback__message">
                 Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.
               </blockquote>
-            </figure>
+            </div>
           </div>
         </div>
       </div>
@@ -370,17 +381,16 @@
           </div>
           <div class="grid-4">
             <a class="mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
-            <a class="icon vkontakte" href="https://vk.com/">&#230</a>
-            <a class="icon facebook" href="https://www.facebook.com/">&#228</a>
-            <a class="icon instagram" href="https://www.instagram.com/">&#235</a>
+            <a class="icon vkontakte" href="https://vk.com/">&#230;</a>
+            <a class="icon facebook" href="https://www.facebook.com/">&#228;</a>
+            <a class="icon instagram" href="https://www.instagram.com/">&#235;</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- кнопка скролла -->
-    <button class="button__scroll" id="button__scroll">
-    </button>
+    <a class="button__top scroll" href="#header">Вверх</a>
   </main>
 
   <!-- footer -->
@@ -394,12 +404,12 @@
         </div>
         <div class="grid-9">
           <nav class="menu pull-right">
-            <a class="menu__item" href="#about">Кто мы</a>
-            <a class="menu__item" href="#gallery">Фотографии</a>
-            <a class="menu__item" href="#plan">План полёта</a>
-            <a class="menu__item" href="#order">Заказать</a>
-            <a class="menu__item" href="#team">Команда</a>
-            <a class="menu__item" href="#contacts">Контакты</a>
+            <a class="menu__item scroll" href="#about">Кто мы</a>
+            <a class="menu__item scroll" href="#gallery" >Фотографии</a>
+            <a class="menu__item scroll" href="#plan">План полёта</a>
+            <a class="menu__item scroll" href="#order">Заказать</a>
+            <a class="menu__item scroll" href="#team">Команда</a>
+            <a class="menu__item scroll" href="#contacts">Контакты</a>
           </nav>
         </div>
       </div>
@@ -410,7 +420,17 @@
   <script src="js/jquery-3.1.1.min.js"></script>
 
   <!-- подключаем плавный скролл -->
-  <script src="js/scroll.js"></script>
+  <script src="js/jquery.scroll.js"></script>
+  <script src="js/jquery.button-fadeout.js"></script>
+
+  <!-- подключаем карусель -->
+  <script>
+    $(document).ready(function() {
+      $("#owl-example").owlCarousel();
+    });
+  </script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/owl.theme.js"></script>
 
   <!-- подключаем галерею -->
   <script>
@@ -423,16 +443,13 @@
   <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
 
-  <!-- плагин для прокрутки слайдов мышью -->
-  <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-
   <!-- подключаем таймер -->
   <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
   <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
   <script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
   <script>
     $(function () {
-      $('#defaultCountdown').countdown({until: new Date(2016, 11 - 1, 21)});
+    $("#defaultCountdown").countdown({until: new Date(2016, 11 - 1, 21)});
     });
   </script>
 

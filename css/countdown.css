@@ -2,42 +2,42 @@
 .is-countdown {
 }
 .countdown-rtl {
-	direction: rtl;
+  direction: rtl;
 }
 .countdown-holding span {
-	color: #888;
+  color: #888;
 }
 .countdown-row {
-	clear: both;
-	width: 100%;
-	text-align: right;
+  clear: both;
+  width: 100%;
+  text-align: right;
 }
 .countdown-show1 .countdown-section {
-	width: 98%;
+  width: 98%;
 }
 .countdown-show2 .countdown-section {
-	width: 48%;
+  width: 48%;
 }
 .countdown-show3 .countdown-section {
-	width: 32.5%;
+  width: 32.5%;
 }
 .countdown-show4 .countdown-section {
-	width: 24.5%;
+  width: 24.5%;
 }
 .countdown-show5 .countdown-section {
-	width: 19.5%;
+  width: 19.5%;
 }
 .countdown-show6 .countdown-section {
-	width: 16.25%;
+  width: 16.25%;
 }
 .countdown-show7 .countdown-section {
-	width: 14%;
+  width: 14%;
 }
 
 .countdown-section {
-	display: block;
-	float: left;
-	text-align: right;
+  display: block;
+  float: left;
+  text-align: right;
 }
 .countdown-amount {
   margin: 0;
@@ -52,6 +52,6 @@
   text-transform: lowercase;
 }
 .countdown-descr {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
