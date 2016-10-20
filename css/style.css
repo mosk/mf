@@ -709,6 +709,7 @@ section[class*="grid"] {
   height: 160px;
   width: 160px;
   background: #474747;
+  border-radius: 50%;
 }
 
 .team__image--pilot:after,
